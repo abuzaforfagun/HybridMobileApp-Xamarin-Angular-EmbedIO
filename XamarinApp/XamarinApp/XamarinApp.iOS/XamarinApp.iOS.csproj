@@ -95,6 +95,7 @@
     <None Include="Info.plist" />
     <Compile Include="MyFavouriteProgrammingLanguage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\dist\**" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
