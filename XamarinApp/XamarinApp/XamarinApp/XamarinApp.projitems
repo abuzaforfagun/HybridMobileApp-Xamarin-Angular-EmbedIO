@@ -19,6 +19,5 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MyFavouriteProgrammingLanguage.cs" />
   </ItemGroup>
 </Project>
