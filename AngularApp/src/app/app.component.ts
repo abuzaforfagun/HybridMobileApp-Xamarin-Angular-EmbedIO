@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   title = 'app';
-  languageList = [];
-
+  languageList: any;
+  constructor(private http: HttpClient) {
+    this.languageList = [];
+  }
   ngOnInit(): void {
-    this.languageList.push("C#");
-    this.languageList.push("TypeScript")
+    this.http.get('http://localhost:8080/api/favouritelanguage').subscribe(result => {
+      this.languageList = result;
+    });
+    // this.languageList.push("C#");
+    // this.languageList.push("TypeScript")
   }
 }
