@@ -11,13 +11,26 @@ namespace XamarinApp.iOS
 {
     public class MyFavouriteProgrammingLanguage : WebApiController
     {
+        List<string> languageList;
+        public MyFavouriteProgrammingLanguage()
+        {
+            languageList = new List<string>();
+            addDummyData();
+        }
+
+        private void addDummyData()
+        {
+            languageList.Add("C#");
+            languageList.Add("TypeScript");
+            languageList.Add("JavaScript");
+            languageList.Add("PHP");
+        }
+
         [WebApiHandler(HttpVerbs.Get, "/api/favouritelanguage")]
         public bool GetAll(WebServer server,
                             HttpListenerContext context)
         {
             var languageList = new List<string>();
-            languageList.Add("C#");
-            languageList.Add("TypeScript");
 
             return context.JsonResponse(
                 languageList.ToArray());
