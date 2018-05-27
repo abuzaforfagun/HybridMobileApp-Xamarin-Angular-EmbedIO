@@ -17,7 +17,8 @@ namespace XamarinApp.iOS
             // if you want to use a different Application Delegate class from "AppDelegate"
             // you can specify it here.
 
-            var server = new WebServer("http://localhost:8080");
+            var server = new WebServer("http://localhost:8080")
+                                .EnableCors();
             server.RegisterModule(new WebApiModule());
             server.Module<WebApiModule>().RegisterController<MyFavouriteProgrammingLanguage>();
             server.RunAsync();
