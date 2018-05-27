@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.Threading;
 using Foundation;
 using UIKit;
 using Unosquare.Labs.EmbedIO;
@@ -16,12 +16,15 @@ namespace XamarinApp.iOS
         {
             // if you want to use a different Application Delegate class from "AppDelegate"
             // you can specify it here.
-            UIApplication.Main(args, null, "AppDelegate");
 
             var server = new WebServer("http://localhost:8080");
             server.RegisterModule(new WebApiModule());
             server.Module<WebApiModule>().RegisterController<MyFavouriteProgrammingLanguage>();
             server.RunAsync();
+            
+
+            UIApplication.Main(args, null, "AppDelegate");
+
         }
     }
 }
