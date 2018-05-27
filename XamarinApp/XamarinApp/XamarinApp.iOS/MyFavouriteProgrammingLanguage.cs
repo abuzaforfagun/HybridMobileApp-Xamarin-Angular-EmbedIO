@@ -30,7 +30,6 @@ namespace XamarinApp.iOS
         public bool GetAll(WebServer server,
                             HttpListenerContext context)
         {
-            var languageList = new List<string>();
 
             return context.JsonResponse(
                 languageList.ToArray());
@@ -40,8 +39,8 @@ namespace XamarinApp.iOS
         [WebApiHandler(HttpVerbs.Post, "/api/favouritelanguage")]
         public bool Post(WebServer server, HttpListenerContext context)
         {
-            var model = context.ParseJson<string>();
-
+            var model = context.RequestBody();
+            
             this.languageList.Add(model);
             // Do dataase operation
             return context.JsonResponse(languageList.ToArray());
