@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
   languageList: any;
+  language: string;
   constructor(private http: HttpClient) {
     this.languageList = [];
   }
@@ -15,5 +16,13 @@ export class AppComponent implements OnInit {
     this.http.get('http://localhost:8080/api/favouritelanguage').subscribe(result => {
       this.languageList = result;
     });
+  }
+
+  addNewLanguage() {
+    this.http.post('http://localhost:8080/api/favouritelanguage', this.language).subscribe(
+      data => {
+        this.languageList = data;
+      }
+    );
   }
 }
