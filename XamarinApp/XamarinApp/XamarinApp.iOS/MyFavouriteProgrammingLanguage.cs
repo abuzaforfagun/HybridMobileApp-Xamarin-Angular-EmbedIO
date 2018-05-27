@@ -19,10 +19,8 @@ namespace XamarinApp.iOS
             languageList.Add("C#");
             languageList.Add("TypeScript");
 
-            return context.JsonResponse(new
-            {
-                list = languageList.ToArray()
-            });
+            return context.JsonResponse(
+                languageList.ToArray());
             
         }
     }
