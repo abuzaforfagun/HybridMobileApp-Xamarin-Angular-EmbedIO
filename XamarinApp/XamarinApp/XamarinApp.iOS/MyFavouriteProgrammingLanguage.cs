@@ -36,5 +36,15 @@ namespace XamarinApp.iOS
                 languageList.ToArray());
             
         }
+
+        [WebApiHandler(HttpVerbs.Post, "/api/favouritelanguage")]
+        public bool Post(WebServer server, HttpListenerContext context)
+        {
+            var model = context.ParseJson<string>();
+
+            this.languageList.Add(model);
+            // Do dataase operation
+            return context.JsonResponse(languageList.ToArray());
+        }
     }
 }
