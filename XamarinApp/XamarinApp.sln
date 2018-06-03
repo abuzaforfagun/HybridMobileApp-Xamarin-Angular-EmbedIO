@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinApp.iOS", "XamarinApp\XamarinApp.iOS\XamarinApp.iOS.csproj", "{E0E9D52E-E0A5-49DA-AF86-211CC499796D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinApp", "XamarinApp\XamarinApp\XamarinApp.shproj", "{0A7430CB-991B-45E4-ABEC-1BC2388DD37B}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		XamarinApp\XamarinApp\XamarinApp.projitems*{0a7430cb-991b-45e4-abec-1bc2388dd37b}*SharedItemsImports = 13
+		XamarinApp\XamarinApp\XamarinApp.projitems*{e0e9d52e-e0a5-49da-af86-211cc499796d}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
+		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Ad-Hoc|iPhone.Deploy.0 = Ad-Hoc|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Ad-Hoc|iPhoneSimulator.Deploy.0 = Ad-Hoc|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.AppStore|iPhone.Deploy.0 = AppStore|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.AppStore|iPhoneSimulator.Deploy.0 = AppStore|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Debug|iPhone.Deploy.0 = Debug|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Release|iPhone.Build.0 = Release|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Release|iPhone.Deploy.0 = Release|iPhone
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{E0E9D52E-E0A5-49DA-AF86-211CC499796D}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7572F19F-53FE-43D3-928F-CF99C9DA2DF5}
+	EndGlobalSection
+EndGlobal
